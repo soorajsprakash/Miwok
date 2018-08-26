@@ -1,6 +1,7 @@
 package com.example.android.miwok;
 
 import android.app.Activity;
+import android.media.MediaPlayer;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
@@ -31,7 +32,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
 
     @Override
-    public View getView(int position,View convertView, ViewGroup parent ) {
+    public View getView(int position, View convertView, ViewGroup parent ) {
 
         View listItemView = convertView;
         // Check if the existing view is being reused, otherwise inflate the view
@@ -77,6 +78,10 @@ public class WordAdapter extends ArrayAdapter<Word> {
         int color = ContextCompat.getColor(getContext(), mColorResourceID);
         // find the color that resource id maps to
         textContainer.setBackgroundColor(color);
+
+
+        //audio
+
 
         // Return the whole list item layout (containing 2 TextViews) so that it can be shown in the ListView
         // Return super.getView(position, convertView, parent);

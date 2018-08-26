@@ -28,7 +28,7 @@
             android:textAppearance="?android:textAppearanceMedium"
             android:textStyle="bold"
             android:textColor="@android:color/white"
-            tools:text="Eg: lutti"/>
+            tools:text="Eg: lutti" />
 
         <TextView
             android:id="@+id/default_text_view"
